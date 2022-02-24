@@ -22,9 +22,5 @@ Running the server application using Docker is advised. If you want to install f
 From the main activity one can add servers by name and IP/domain. Subtitles for audio feedback can also been toggled. This option is useful for devices that may not have integrated speakers (like ODG R-7).
 Pressing the 'Play' button next to a server will initiate a connection to the Gabriel server at that address.
 
-## Server
-### Container
-```bash
-docker run --rm -it -p 9099:9099 cmusatyalab/gabriel-pingpong:latest
-```
-Note that the server maintins the state of the application. Therefore, one server cannot support multiple clients and the server must be restarted in between uses. In the future, it would be good to move application state to the the protobuf messages that get passed between the client and server. 
+
+Note that the server maintains the state of the application. Therefore, one server cannot support multiple clients and the server must be restarted in between uses. In the future, it would be good to move application state to the the protobuf messages that get passed between the client and server. 
